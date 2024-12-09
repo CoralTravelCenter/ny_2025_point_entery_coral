@@ -12,7 +12,7 @@ const root = document.createElement('div');
 root.classList.add('ny_notauth_colba')
 
 hostReactAppReady().then(() => {
-	if (location.origin.includes('backoffice')) return;
+	if (location.origin.includes('backoffice') || location.pathname.includes('/where-to-buy/')) return;
 	if (Cookies.get('next-auth.session-token')) {
 		appendOnce(placeToInsert, auth(root, gamePage));
 		console.log('auth')

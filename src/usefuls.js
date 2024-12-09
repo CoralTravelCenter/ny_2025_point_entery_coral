@@ -1,6 +1,6 @@
 export function appendOnce(parent, child) {
-	console.log(!parent.contains(child))
-	if (!parent.contains(child)) {
+	const isInserted = document.querySelector('.ny_notauth_colba')
+	if (!isInserted) {
 		parent.append(child);
 	}
 }

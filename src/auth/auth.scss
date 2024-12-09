@@ -9,6 +9,7 @@
 	padding-top: 40px;
 	z-index: 10;
 	font-family: inherit;
+	pointer-events: none;
 
 	&::before {
 		content: '';
@@ -50,6 +51,7 @@
 		top: 33%;
 		transform: translateY(-50%);
 		left: 0;
+		pointer-events: all;
 		> img {
 			max-width: 100%;
 			object-fit: contain;
@@ -64,6 +66,7 @@
 		background: #F3F9FF;
 		display: flex;
 		flex-direction: column;
+		pointer-events: all;
 		justify-content: center;
 		align-items: center;
 		position: relative;
